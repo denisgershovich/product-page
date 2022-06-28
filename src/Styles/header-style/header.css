@@ -1,0 +1,195 @@
+.header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 0.8rem;
+  padding-bottom: 1.5rem;
+  border-bottom: 1px solid #b6bcc8;
+  -webkit-padding-end: 5%;
+          padding-inline-end: 5%;
+  -webkit-padding-start: 5%;
+          padding-inline-start: 5%;
+}
+
+.header .inner-header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.header .inner-header .mobile-nav {
+  display: none;
+}
+
+.header .inner-header .mobile-nav .mobile-hamburger {
+  display: none;
+}
+
+.header .inner-header .mobile-nav .mobile-nav-list {
+  display: none;
+}
+
+@media screen and (max-width: 790px) {
+  .header .inner-header .mobile-nav {
+    display: block;
+  }
+  .header .inner-header .mobile-nav .mobile-hamburger {
+    display: block;
+    margin-top: 0.4em;
+    cursor: pointer;
+  }
+  .header .inner-header .mobile-nav .mobile-nav {
+    display: none;
+    opacity: 1;
+  }
+  .header .inner-header .mobile-nav .mobile-nav .mobile-nav-list {
+    display: none;
+  }
+}
+
+.header .inner-header .logo-header {
+  -webkit-margin-end: 3.5em;
+          margin-inline-end: 3.5em;
+  font-size: 1.2rem;
+}
+
+.header .inner-header .logo-header .logo-span {
+  color: #ff7d1a;
+}
+
+@media only screen and (max-width: 900px) and (min-width: 790px) {
+  .header .inner-header .logo-header {
+    -webkit-margin-end: 0.4em;
+            margin-inline-end: 0.4em;
+  }
+}
+
+@media screen and (max-width: 790px) {
+  .header .inner-header .logo-header {
+    -webkit-margin-start: 1.8em;
+            margin-inline-start: 1.8em;
+    font-size: 1rem;
+  }
+}
+
+@media screen and (min-width: 790px) {
+  .header .inner-header .nav {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+}
+
+@media screen and (max-width: 790px) {
+  .header .inner-header .nav {
+    display: none;
+  }
+}
+
+.header .inner-header .nav > * {
+  -webkit-margin-start: 2.5em;
+          margin-inline-start: 2.5em;
+  color: #68707d;
+}
+
+.header .inner-header .nav > * :hover {
+  border-bottom: 3px solid #ff7d1a;
+}
+
+.header .inner-header .nav > * a {
+  padding-bottom: 2.25rem;
+}
+
+.header .buyer-header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative;
+}
+
+.header .buyer-header .buyer-avatar {
+  width: 40%;
+}
+
+.header .buyer-header .buyer-avatar:hover {
+  cursor: pointer;
+}
+
+.header .buyer-header .cart {
+  cursor: pointer;
+  width: 20%;
+  border-radius: 0%;
+  position: relative;
+}
+
+.header .buyer-header .product-quantity {
+  background-color: #ff7d1a;
+  border-radius: 50%;
+  width: 1em;
+  text-align: center;
+  position: absolute;
+  top: -1%;
+  left: 10%;
+}
+
+@media screen and (max-width: 790px) {
+  .header {
+    padding: 1.2rem;
+  }
+}
+
+@media screen and (max-width: 790px) {
+  .active .header .inner-header .mobile-hamburger {
+    display: none;
+  }
+  .active .header .inner-header .mobile-nav {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 50vw;
+    height: 100vh;
+    padding: 1.5rem;
+    background-color: white;
+    -webkit-box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+            box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    opacity: 1;
+    z-index: 99;
+  }
+  .active .header .inner-header .mobile-nav .mobile-nav-list {
+    display: block;
+    opacity: 1;
+  }
+  .active .header .inner-header .mobile-nav .mobile-nav-list li:nth-child(1) {
+    cursor: pointer;
+    margin-bottom: 3rem;
+  }
+  .active .header .inner-header .mobile-nav .mobile-nav-list > * {
+    margin: 1.2rem;
+  }
+  .active .main-app {
+    opacity: 0.3;
+  }
+}
+/*# sourceMappingURL=header.css.map */

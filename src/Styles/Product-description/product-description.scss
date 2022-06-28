@@ -1,0 +1,108 @@
+@import '../Variables/Variables.scss';
+
+.product{
+    text-align:start;
+    display: flex;
+    flex-direction: column;
+    margin-top: 5%;
+
+    .product-description-container{
+
+       .product-company{
+           margin-bottom: 1.3rem;
+        }
+
+       .product-name{
+           font-size: 2.1em;
+           margin-bottom: 1.9rem;
+       }
+
+       .product-description{
+           margin-bottom: 1.8rem;
+       }
+
+       .product-price{
+           font-size: 1.5rem;
+           font-weight: 600;
+           margin-bottom: 0.7rem;
+       }
+
+       .product-discount{
+           background-color: $Pale-orange;
+           border-radius: 5px;
+           font-size: 1.2rem;
+       }
+
+       .product-old-price{
+           text-decoration: line-through;
+           font-size: 1.1rem;
+           margin-bottom: 2.5rem;
+       }
+        @media only screen and (max-width: 1250px) and (min-width: 790px)  {
+            margin-left: 3rem; 
+        }
+
+       @media screen and (max-width: 790px) {
+           padding-left: 2em;
+            .product-company{
+                margin-bottom: 1.1rem;
+                font-size: 0.8em;
+              }
+            .product-name{
+                font-size: 1.7em;
+                margin-bottom: 1.2rem;
+             }
+       }
+    }
+
+    .product-description-btns{
+        display: flex;
+        gap: 10px;
+        width: 80%;
+        .product-description-btns-add{
+            border: 1px solid black;
+            border-radius: 5px;
+            display: flex;
+            flex:1;
+            justify-content: center;
+            >*{
+                padding: 0.8rem;
+                font-size: 1.5rem;
+                width: 100%;
+            }
+        }
+
+        .product-description-btns-add-to-cart{
+             border: 1px solid black;
+             border-radius: 5px;
+             display: flex;
+             flex:2;
+             align-items: center;
+             padding-inline-start: 5%;
+             padding-inline-end: 5%;
+             justify-content: center;
+            img{
+                width: 10%;
+                height: 30%;
+                margin-inline-end: 0.9em;
+            }
+        }
+        
+        .btn{
+            cursor: pointer;
+           &:active{
+                background-color:$Orange ;
+            }
+        }
+        
+        @media only screen and (max-width: 1250px) and (min-width: 790px)  {
+            margin-left: 3rem; 
+        }
+        @media screen and (max-width: 790px) {
+            width: 100%;
+            padding-inline-start: 10%;
+            padding-inline-end: 10%;
+            margin-bottom: 1rem;
+        }
+    }
+}
