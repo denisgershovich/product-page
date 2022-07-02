@@ -39,9 +39,6 @@ const Header = () => {
             <li>
               <Link to="/">About</Link>
             </li>
-            <li>
-              <Link to="/">Contact</Link>
-            </li>
           </ul>
         </div>
         <div className="logo-header">
