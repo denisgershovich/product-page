@@ -2,7 +2,7 @@
 Responsive ecommerce product page
 
 ## Link 
-[Github pages](https://github.com/DennisGershovich/E-commerce-product-page.git)
+[Github pages](https://dennisgershovich.github.io/E-commerce-product-page/)
 
 ## Built with
 - Semantic HTML5 markup
